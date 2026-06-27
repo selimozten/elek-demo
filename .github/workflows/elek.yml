@@ -22,6 +22,8 @@ jobs:
         with:
           fetch-depth: 0
       - uses: selimozten/elek@v1
+        env:
+          ELEK_PUBLIC_MODEL_LABEL: elek
         with:
           deepseek_api_key: ${{ secrets.DEEPSEEK_API_KEY }}
           provider: deepseek

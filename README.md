@@ -6,4 +6,4 @@ for GitHub pull requests.
 
 The open demo PR intentionally introduces a tenant-isolation regression so elek
 can review a concrete code change and post normal GitHub review feedback.
-
+Smoke trigger: 2026-06-27T14:12:02Z

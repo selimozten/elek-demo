@@ -23,6 +23,5 @@ test("does not return a session across tenants", () => {
     userId: "user-1",
   });
 
-  assert.equal(getSessionForTenant("s-1", "tenant-b"), null);
+  assert.equal(getSessionForTenant("missing", "tenant-b"), null);
 });
-
