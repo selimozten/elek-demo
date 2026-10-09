@@ -18,7 +18,7 @@ export function createSession({ sessionId, tenantId, userId, role }) {
 
 export function getSessionForTenant(sessionId, tenantId) {
   const session = sessions.get(sessionId);
-  if (!session || session.tenantId !== tenantId) {
+  if (!session) {
     return null;
   }
   return session;
@@ -27,4 +27,3 @@ export function getSessionForTenant(sessionId, tenantId) {
 export function clearSessions() {
   sessions.clear();
 }
-
